@@ -4,7 +4,13 @@
 % use:
 %  \ac{IR}
 
-\begin{acronym}\itemsep=-18pt
+% use template-defined width if defined, else, use AAAA defined below
+\ifdef{\acrofirstcolwidth}{}{\newcommand{\acrofirstcolwidth}{AAAA}}
+
+\begingroup
+% to get wider first column add more AAA to the option
+% to adjust vertical spacing adjust itemsep
+\begin{acronym}[\acrofirstcolwidth]\itemsep=0pt
 \acro{1-D}{One-Dimensional}
 \acro{1D}{One-Dimensional}
 \acro{2-D}{Two-Dimensional}
@@ -28,6 +34,7 @@
 \acro{AFRL}{Air Force Research Laboratories}
 \acro{AGC}{Automatic Gain Control}
 \acro{AGL}{Above Ground Level}
+\acro{AGT}{Atmosphere Generator Toolkit}
 \acro{AHP}{Analytical Hierarchy Process}
 \acro{AI}{Artificial Intelligence}
 \acro{AIM}{Air Intercept Missile}
@@ -43,6 +50,7 @@
 \acro{ASL}{Above Sea Level}
 \acro{ASRAAM}{Advanced Short Range Air-to-Air Missile}
 \acro{ASU}{Air Support Unit}
+\acro{ATK}{Aerosol toolkit}
 \acro{ATP}{Acceptance Test Procedure}
 \acro{ATR}{Automatic Target Recognition}
 \acro{ATS}{Advanced Thermographic Systems}
@@ -126,6 +134,7 @@
 \acro{DIRCM}{Directed Infrared Countermeasure}
 \acro{DIRSIG}{Digital Imaging and Remote Sensing Image Generation}
 \acro{DIS}{Distributed Interactive Simulation}
+\acro{DISORT}{Discrete Ordinates Radiative Transfer Program for a Multi-Layered Plane-Parallel Medium}
 \acro{DITSIM}{Directed Infrared Countermeasure and Imaging Toolkit Simulator}
 \acro{dl}{Digital Level}
 \acro{DL}{Digital Level}
@@ -168,6 +177,7 @@
 \acro{EOSS}{Electro-Optical Simulation System}
 \acro{EPS}{European Polar System }
 \acro{ESD}{East-South-Down (coordinate convention)}
+\acro{ESRL}{Earth System Research Laboratory}
 \acro{EULA}{End-User Licence Agreement}
 \acro{EUMETSAT}{EUropean organization for the exploitation of METeorological SATellites}
 \acro{EW}{Electronic Warfare}
@@ -271,6 +281,7 @@
 \acro{IRIS}{Infrared Imaging Seeker}
 \acro{IRML}{Infrared Mobile Laboratory}
 \acro{IRSA}{Infrared Sensor Assembly}
+\acro{IRSL}{Infrared Spectral Library}
 \acro{IRST}{Infrared Search and Track}
 \acro{ISA}{International Standard Atmosphere}
 \acro{ISAR}{Inverse Synthetic Aperture Radar}
@@ -295,6 +306,8 @@
 \acro{KTAS}{Knots True Air Speed}
 \acro{LADAR}{Laser Detection and Ranging}
 \acro{LAN}{Local Area Network}
+\acro{LBL}{Line-By-Line}
+\acro{LBLRTM}{Line-By-Line Radiative Transfer Model}
 \acro{LiDAR}{Light Detection and Ranging}
 \acro{LN}{Liquid Nitrogen}
 \acro{LOD}{Level of Detail}
@@ -324,6 +337,7 @@
 \acro{MDT}{Minimum detectable temperature}
 \acro{MIR}{Mid Infrared}
 \acro{ML}{Machine Learning}
+\acro{MLOS}{multiple line-of-sight}
 \acro{MLS}{Mid-latitude Summer}
 \acro{MMW}{Millimetre Wave}
 \acro{MO}{Magneto-Optical}
@@ -354,6 +368,8 @@
 \acro{NAD}{North American Datum}
 \acro{NASA}{National Aeronautics and Space Administration}
 \acro{NAVD}{North American Vertical Datum }
+\acro{NCAR}{National Center for Atmospheric Research}
+\acro{NCEP}{National Centers for Environmental Prediction}
 \acro{ND}{Neutral Density}
 \acro{NDA}{Non-Disclosure Agreement}
 \acro{NDOF}{N Degrees of Freedom}
@@ -412,6 +428,7 @@
 \acro{PI}{Proportional-Integral}
 \acro{PID}{Proportional-Integral-Derivative}
 \acro{POC}{Point of Contact}
+\acro{PNNL}{Pacific Northwest National Laboratory}
 \acro{PRNU}{Photo Response Non-Uniformity}
 \acro{PSD}{Power Spectral Density}
 \acro{PSF}{Point Spread Function}
@@ -462,6 +479,7 @@
 \acro{SAM}{Surface to Air Missile}
 \acro{SANDF}{South African National Defence Force}
 \acro{SAP}{Systolic array processor}
+\acro{modSAP}[SAP]{Spectral Aerosol Profile}
 \acro{SAR}{Synthetic Aperture Radar}
 \acro{SAST}{South African Standard Time}
 \acro{SBC}{Single-board Computers}
@@ -541,6 +559,7 @@
 \acro{UE4}{Unreal Engine 4}
 \acro{UK}{United Kingdom}
 \acro{UML}{Unified Modelling Language}
+\acro{UNESCO}{United Nations Educational, Scientific and Cultural Organization}
 \acro{UNIX}{A computer operating system, not an acronym. UNIX is a pun on MULTICS}
 \acro{URI}{Uniform Resource Identifier}
 \acro{URL}{Uniform Resource Locator}
@@ -575,5 +594,5 @@
 \acro{XP}{Microsoft Windows XP (operating system)}
 \acro{XPSP}{Microsoft Windows XP (operating system) Service Pack}
 \end{acronym}
-
+\endgroup
 
