@@ -1,18 +1,14 @@
-% -*- TeX -*- -*- UK -*- -*- Soft -*-
-\fmchaptertoc{Abbreviations} % unnumbered, show in TOC
-%\fmchapter{Abbreviations} % unnumbered, do not show in TOC
-\label{sec:Abbreviations}
-
 % use:
 %  \ac{IR}
 
 % use template-defined width if defined, else, use AAAA defined below
 \ifdef{\acrofirstcolwidth}{}{\newcommand{\acrofirstcolwidth}{AAAA}}
+\ifdef{\abbrevitemssep}{}{\newlength{\abbrevitemssep}\setlength{\abbrevitemssep}{0pt}}
 
 \begingroup
 % to get wider first column add more AAA to the option
 % to adjust vertical spacing adjust itemsep
-\begin{acronym}[\acrofirstcolwidth]\itemsep=0pt
+\begin{acronym}[\acrofirstcolwidth]\itemsep=\abbrevitemssep
 \acro{1-D}{One-Dimensional}
 \acro{1D}{One-Dimensional}
 \acro{2-D}{Two-Dimensional}
@@ -46,6 +42,7 @@
 \acro{AMBBB}{Ambient Temperature Blackbody}
 \acro{AMRAAM}{Advanced Medium Range Air-to-Air Missile}
 \acro{ANSI}{American National Standards Institute}
+\acro{AOT}{Aerosol Optical Thickness}
 \acro{API}{Application Programming Interface}
 \acro{APU}{Auxiliary Power Unit}
 \acro{ARLBED}{Army Research Laboratory Battlefield Environment Directorate}
@@ -183,6 +180,7 @@
 \acro{EOSS}{Electro-Optical Simulation System}
 \acro{EPS}{European Polar System }
 \acro{EPW}{Energy Plus Weather}
+\acro{ESA}{European Space Agency}
 \acro{ESD}{East-South-Down (coordinate convention)}
 \acro{ESRL}{Earth System Research Laboratory}
 \acro{EULA}{End-User Licence Agreement}
@@ -205,6 +203,7 @@
 \acro{FOV}{Field of View}
 \acro{FOVEF}{Field of view Expansion Factor}
 \acro{FPA}{Focal Plane Array}
+\acro{FORTRAN}{Formula Translation}
 \acro{FPGA}{Field-Programmable Gate Array}
 \acro{FPN}{Fixed Pattern Noise}
 \acro{FPO}{Fixed Pattern Offset}
@@ -218,6 +217,7 @@
 \acro{GA-Sim I/O}{Gimbal-Assembly Simulator Input Output}
 \acro{GA-Sim}{Gimbal-Assembly Simulator}
 \acro{GA}{Gimbal Assembly}
+\acro{GADS}{Global Aerosol Data Set}
 \acro{GB}{Gigabyte}
 \acro{GCN}{Guidance, Navigation and Control}
 \acro{Ge}{Germanium}
@@ -231,6 +231,7 @@
 \acro{GMI}{Gate Modulated Input}
 \acro{GMT}{Greenwich Mean Time}
 \acro{GNSS}{Global Navigation Satellite System}
+\acro{GNU}{GNU's Not Unix}
 \acro{GP}{Grid Pixel Detector}
 \acro{GPS}{Global Positioning System}
 \acro{GPU}{Graphics Processor Unit}
@@ -357,6 +358,7 @@
 \acro{MOOC}{Massive Open Online Course}
 \acro{MODIS}{Moderate Resolution Imaging Spectroradiometer}
 \acro{MOMO}{Matrix-Operator Model}
+\acro{MOPSMAP}{Modeled optical properties of ensembles of aerosol particles}
 \acro{MORTICIA}{Monte-Carlo Optical Rendering for Theatre Investigation of Capability Under the Influence of the Atmosphere}
 \acro{MOSART}{MOderate Spectral Atmospheric Radiance and Transmittance}
 \acro{MOSFET}{Metal Oxide Semiconductor Field Effect Transistor}
@@ -440,6 +442,7 @@
 \acro{PDF}{Portable Document Format}
 \acro{PFD}{Pre-flight demonstration}
 \acro{PG}{Parliamentary Grant}
+\acro{PHP}{Hypertext Preprocessor}
 \acro{PI}{Proportional-Integral}
 \acro{PID}{Proportional-Integral-Derivative}
 \acro{POC}{Point of Contact}
@@ -533,6 +536,7 @@
 \acro{SPIE}{International Society for Optical Engineering}
 \acro{SPP}{Sensor Pre-Processor}
 \acro{SRS}{Software Requirement Specification}
+\acro{SSA}{single-scattering albedo}
 \acro{ssh} {Secure Shell}
 \acro{SSI}{Spectral Sciences, Inc.}
 \acro{SSS}{System/Subsystem Specification}
